@@ -14,6 +14,16 @@
   --hover-color: #188ce8;
 }
 
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
 /* Global Styles */
 body {
   font-family: var(--main-font);
@@ -40,25 +50,26 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 0px;
-  padding-bottom: 0px;
   margin-right: auto;
   margin-left: auto;
   /* outline: 2px solid red;
   outline-offset: -2px; */
-  text-align: center;
 }
-
+.header-container {
+  border-bottom: 1px solid #ececec;
+}
 /* header-footer*/
 .header {
   color: var(--main-white);
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .header-group {
   display: flex;
-  padding: 32px 0px;
   margin: 0px 0px 0px 93px;
   gap: 50px;
 }
@@ -75,6 +86,10 @@ body {
   text-decoration: none;
   font-weight: 700;
 }
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+}
 
 .logo-blue {
   color: var(--hover-font-color);
@@ -86,6 +101,7 @@ body {
 
 .logo-white {
   color: var(--main-white);
+  margin-bottom: 20px;
 }
 
 .info {
@@ -129,14 +145,10 @@ body {
   color: var(--main-white);
   text-decoration: none;
   background: var(--footer-color);
-}
-.footer-container {
-  width: 1200px;
-  height: 252px;
-  text-align: left;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .adr {
   text-decoration: none;
   font-style: normal;
@@ -144,6 +156,10 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-white);
+}
+
+.adress-list :not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .inf {
@@ -165,24 +181,20 @@ body {
 }
 
 /* main*/
-.main {
+.hero {
   color: var(--main-white);
   background: var(--main-dark);
-  display: flex;
-  flex-direction: column;
-}
-.main-container {
-  width: 1200px;
-  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 280px;
 }
 
-.main-title {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-top: 200px;
+  margin-bottom: 30px;
 }
 
 .button {
@@ -258,6 +270,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .text {
@@ -267,19 +280,27 @@ body {
 
 .futures {
   background: var(--main-white);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .futures-foto {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
+
 .list-futures {
   display: flex;
   gap: 30px;
+}
+.list-text {
+  width: 270px;
 }
 .post {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .service {
@@ -289,12 +310,19 @@ body {
 
 .team {
   background: var(--main-team);
-  padding: 0px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team-list {
   display: flex;
   justify-content: space-between;
 }
+.team-hero {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
 .badge {
   background: var(--main-white);
 }
@@ -315,6 +343,7 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  padding-bottom: 10px;
 }
 
 .production {
@@ -322,6 +351,7 @@ body {
   font-size: 18px;
   letter-spacing: 0.06em;
   color: var(--main-font-color);
+  margin-bottom: 4px;
 }
 
 .note {
@@ -329,6 +359,9 @@ body {
   font-size: 16px;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
+}
+.prod-note {
+  margin: 20px 24px;
 }
 .works {
   display: flex;
@@ -340,4 +373,8 @@ body {
   width: 370px;
   height: 404px;
   border: 1px solid #eeeeee;
+}
+
+.section {
+  padding: 94px 0;
 }
