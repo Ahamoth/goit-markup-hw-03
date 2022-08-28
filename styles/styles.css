@@ -52,7 +52,7 @@ body {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  /* outline: 2px solid red;
+  /*  outline: 2px solid red;
   outline-offset: -2px; */
 }
 .header-container {
@@ -352,6 +352,9 @@ body {
   letter-spacing: 0.06em;
   color: var(--main-font-color);
   margin-bottom: 4px;
+}
+.projects {
+  margin-bottom: 94px;
 }
 
 .note {
