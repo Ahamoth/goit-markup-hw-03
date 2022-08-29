@@ -57,6 +57,8 @@ body {
 }
 .header-container {
   border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 /* header-footer*/
 .header {
@@ -64,9 +66,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 .header-group {
   display: flex;
@@ -245,7 +244,6 @@ body {
   padding: 6px 22px;
   display: inline-block;
   min-width: 73px;
-  margin-top: 94px;
   margin-bottom: 50px;
   cursor: pointer;
 }
@@ -343,18 +341,20 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .production {
   font-weight: 700;
   font-size: 18px;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-font-color);
   margin-bottom: 4px;
 }
 .projects {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .note {
@@ -364,7 +364,7 @@ body {
   color: var(--secondary-font-color);
 }
 .prod-note {
-  margin: 20px 24px;
+  padding: 20px 24px;
 }
 .works {
   display: flex;
